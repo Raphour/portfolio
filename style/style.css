@@ -1,0 +1,218 @@
+/*Import google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap');
+
+body {
+
+    padding: 50px;
+    background-image: url(../assets/background.jpeg);
+    background-size: 100% 100%;
+    /* pour ajuster la taille de l'image en fonction de la taille de l'écran */
+    background-repeat: no-repeat;
+    /* pour empêcher la répétition de l'image */
+    height: 100%;
+
+
+
+}
+
+html {
+    height: 100%;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('../assets/cursor32.png')1 1,  auto;
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr ;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "list-image list-image list-image menu-image menu-image menu-image"
+        "list-image list-image list-image sideButtons sideButtons sideButtons";
+    height: 100%;
+
+    
+}
+
+.sideButtons{
+    grid-area: sideButtons;
+}
+.menu-image{
+    grid-area: menu-image;
+
+}
+
+.menu-image img{
+    width: 100%;
+}
+
+.image-list {
+    grid-area: list-image;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    align-content: center;
+    list-style: none;
+    padding: 0 10% 0 10%;
+    margin: 0;
+    width: 100%;
+    font-family: 'Jura', sans-serif;
+
+}
+
+.image-container:hover .image-text h3 {
+    font-weight: 600;
+
+}
+
+.image-list li {
+    flex: 0 0 50%;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.buttonText{
+    font-size: 3vw;
+}
+
+
+.image-container>img {
+    width: 100%;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.image-text h3,
+.image-text p {
+    margin: 0;
+}
+
+.image-text h3 {
+
+    font-weight: 400;
+}
+
+/*PAGE PRESENTATION*/
+
+.conteneur-dialogue {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: repeat(5, 1fr) 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.dialogue {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    font-family: 'Jura', sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    grid-area: 5 / 2 / 6 / 6;
+    padding: 20px;
+
+}
+
+.boutons {
+    grid-area: 4 / 5 / 5 / 7;
+    text-align: right;
+}
+
+
+
+.boutonMenu{
+    grid-area: 4/1/5/2;
+    width: 50%;
+}
+
+.texte-dialogue {
+    grid-area: 1 / 1 / 3 / 7;
+}
+
+.image-dialogue {
+    grid-area: 2 / 2 / 5 / 3;
+    border-radius: 10px;
+}
+
+.image-dialogue img {
+    height: 100%;
+}
+
+a{
+    width: fit-content;
+}
+
+#imageMenu{
+    border-radius: 20px;
+    border: 5px solid white;
+
+}
+
+#bouton-precedent, #bouton-suivant, .boutonMenu{
+    border-radius: 5px;
+    padding: 7px;
+    border: grey 1px solid;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    background-color: azure;
+
+}
+
+#bouton-precedent:hover:enabled, #bouton-suivant:hover:enabled, .boutonMenu:hover{
+    border-radius: 5px;
+    padding: 4px;
+    border: #2dade3 3px solid;
+
+
+
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.buttonsContainer img{
+    width: 30%
+}

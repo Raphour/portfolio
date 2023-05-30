@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap');
+body{
+    background-image: url(../assets/background.jpeg);
+    background-size: 100% 100%; /* pour ajuster la taille de l'image en fonction de la taille de l'écran */
+    background-repeat: no-repeat; /* pour empêcher la répétition de l'image */
+
+}
+html{
+    height: 100%;
+}
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}

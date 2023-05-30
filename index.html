@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<script src="js/script.js"></script>
+	<title>Portfolio</title>
+</head>
+
+<body>
+	<div class="container">
+		<section class="image-list">
+			<a href="pages/presentation.html">
+				<div class="image-container" onmouseover="changeImage(this); changeImageMenu('./assets/bowling.png') " onmouseout="resetImage(this); resetImageMenu()">
+					<img alt="Image 1" src="./assets/menu_button.png">
+					<div class="image-text">
+						<h3 class="buttonText">Présentation</h3>
+					</div>
+				</div>
+			</a>
+			<a href="pages/passion.html">
+				<div class="image-container" onmouseover="changeImage(this),changeImageMenu('./assets/golf.png')" onmouseout="resetImage(this),resetImageMenu()">
+					<img src="assets/menu_button.png">
+					<div class="image-text">
+						<h3 class="buttonText">Expérience</h3>
+					</div>
+				</div>
+			</a>
+			<a href="pages/hobbies.html">
+				<div class="image-container" onmouseover="changeImage(this); changeImageMenu('./assets/tennis.png') " onmouseout="resetImage(this); resetImageMenu()">
+					<img src="assets/menu_button.png">
+					<div class="image-text">
+						<h3 class="buttonText">Projet</h3>
+					</div>
+				</div>
+			</a>
+			<a href="pages/avenir.html">
+				<div class="image-container" onmouseover="changeImage(this); changeImageMenu('./assets/baseball.png') " onmouseout="resetImage(this); resetImageMenu()">
+					<img src="assets/menu_button.png">
+					<div class="image-text">
+						<h3 class="buttonText">A propos</h3>
+					</div>
+				</div>
+			</a>
+		</section>
+
+		<section class="menu-image">
+			<img id='imageMenu' src="assets/boxe.png" alt="Image de menu">
+
+		</section>
+
+		<section class="sideButtons">
+			<div class="buttonsContainer">
+				<img onmouseover="changeSideImage('sideImageGit','assets/github.png')" onmouseout="resetSideImage('sideImageGit','assets/githubUnHover.png')" src="assets/githubUnHover.png" alt="Bouton Github" id="sideImageGit" onclick='window.open("//www.github.com/Raphour/")''>
+			</div>
+		</section>
+
+	</div>
+
+</body>
+
+</html>
