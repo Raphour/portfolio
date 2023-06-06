@@ -13,7 +13,8 @@ window.onload = function () {
 		
 		"Bonjour, je me présente je m'appelle Raphaël Silly, j'ai 18 ans...",
 		"Je viens de Tullins une ville près de Grenoble et cette année j'ai déménagé à Nantes pour mes études d'informatique... ",
-		"Ce site va vous permettre d'en savoir plus sur moi, sur mes projets et mes expériences",
+		"J'ai suivi un baccalauréat techologique STI2D spécialité SIN au lycée Polyvalent Ferdinand Buisson à Voiron...",
+		"Ce site va vous permettre d'en savoir plus sur moi, sur mes compétences et mes expériences...",
 		"Puis je vous parlerai de mes projets pour l'avenir et de mes ambitions...",
 		"Le site est assez simple d'utilisation comme vous avez compris deux boutons vous permettent de naviguer dans les dialogues...",
 		"Vous pouvez aussi utiliser les touches A et B de votre clavier pour naviguer dans les dialogues...",

@@ -166,6 +166,8 @@ html {
     width: 50%;
 }
 
+
+
 .texte-dialogue {
     grid-area: 1 / 1 / 3 / 7;
 }
@@ -177,6 +179,18 @@ html {
 
 .image-dialogue img {
     height: 100%;
+}
+
+.image-dialogue-contexte{
+    grid-area: 2 / 3 / 5 / 6;
+    text-align: center;
+    padding: 15px;
+    
+
+}
+.image-dialogue-contexte img{
+    height: 100%;
+    border-radius: 5px;
 }
 
 a{

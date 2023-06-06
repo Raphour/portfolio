@@ -16,7 +16,8 @@ window.onload = function () {
 		"J'ai trouvé le Kotlin très adapté au développement d'applications Android, tandis que Go m'a permis de créer des applications légères et performantes...",
 		"Ma familiarité avec PHP m'a permis de développer des sites web dynamiques et interactifs, exploitant ou non des bases de données...",
 		"Python occupe une place spéciale dans mon parcours en tant que développeur, car c'est le premier langage de programmation avec lequel j'ai été initié...",
-		"Sa simplicité et sa syntaxe claire ont facilité ma compréhension des concepts fondamentaux de la programmation..."
+		"Sa simplicité et sa syntaxe claire ont facilité ma compréhension des concepts fondamentaux de la programmation...",
+		"Pour en savoir plus je vous invite à aller voir les projets que j'ai réalisé"
 
 		
 	];

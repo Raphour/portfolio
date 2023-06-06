@@ -3,6 +3,7 @@ window.onload = function () {
 	var boutonPrecedent = document.querySelector("#bouton-precedent");
 	var boutonSuivant = document.querySelector("#bouton-suivant");
 	var texteDialogue = document.querySelector("#texte-dialogue");
+	var imageDialogue = document.querySelector("#image_dialogue")
 	var enTrainDEcrire = false;
 	var indexDialogue = 0;
 	
@@ -10,12 +11,42 @@ window.onload = function () {
 
 
 	var dialogues = [
-		"Avant que je vienne à Nantes, je jouais dans un club de Basket. C'est un sport qui me tenait à coeur et que j'ai pratiqué pendant 4 ans...",
-        "C'est un sport qui m'a beaucoup apporté, j'y ai appris des valeurs fortes comme le respect, l'esprit d'équipe et la persévérance...",
-        "De plus étant arbitre, cette période m'a aidé à prendre confiance en moi et à m'exprimer en public...",
-        "C'est grâce à ce sport, et aux personnes avec qui je le pratiquais que j'ai pu devenir la personne que je suis aujourd'hui.",
+		"Le premier projet qui m'a animé pendant ma premier année de BUT c'est un programme dans le langage GO...",
+		"Il s'agit d'un pseudo jeu mettant en scène des particules...",
+		"Il utilise la librairie Ebiten, une librairie pour le langage go permettant de créer des jeux",
+		"C'était un projet très intéressant à traiter et j'ai beaucoup aimé apprendre de nouvelles choses et résoudre des problèmes complexes...",
+		"Les autres projets qui m'ont animé ont été les projets web...",
+		"Dont un site pour des locations de voitures...",
+		"Ce site comportait quelques défis techniques surtout pour la page de paiement ",
+		"Et un autre prototype de site répertoriant les bars de Nantes...",
+		"Ces projets m'ont aidé à développer ma créativité et mon envie de comprendre les différentes technologie du web...",
+		"Actuellement je travail sur un projet de jeu de morpion en réseau...",
+		"Pour cela je vais utiliser le langage python et le protocole TCP/IP...",
+		"Ce projet me tient à coeur car il rassemble beaucoup de savoir et de compétences en réseau et en programmation...",
+		"Pour en savoir plus sur les différents projet le lien de mon Github est disponible sur le Menu."
+ 
+
 		
 	];
+
+	var images_dialogues = [
+		null,
+		"/assets/imageParticules1.png",
+		"/assets/imageParticules1.png",
+		"/assets/imageParticules2.png",
+		null,
+		"/assets/dmvoitureagogo.png",
+		"/assets/dm-dev-2.png",
+		"/assets/site-comm.png",
+		null,
+		"/assets/jeu-reseau.png",
+		"/assets/jeu-reseau.png",
+		"/assets/jeu-reseau.png"
+
+
+
+
+	]
 
 	// Fonction pour afficher un dialogue progressivement
 	function afficherLettre(texte) {
@@ -39,6 +70,12 @@ window.onload = function () {
 		if (indexDialogue < dialogues.length - 1) {
 			indexDialogue = dialogues.indexOf(texteDialogue.textContent) + 1;
 			var nouveauDialogue = dialogues[indexDialogue];
+			var image = images_dialogues[indexDialogue];
+			if(!!image){
+				imageDialogue.src = image;
+			}else{
+				imageDialogue.src = ""
+			}
 			texteDialogue.textContent = "";
 			afficherLettre(nouveauDialogue);
 			boutonPrecedent.disabled = false;
@@ -54,6 +91,14 @@ window.onload = function () {
 		if (indexDialogue > 0) {
 			indexDialogue = dialogues.indexOf(texteDialogue.textContent) - 1;
 			var nouveauDialogue = dialogues[indexDialogue];
+			var image = images_dialogues[indexDialogue];
+			if(!!image){
+				imageDialogue.src = image;
+			}else{
+				imageDialogue.src = ""
+			}
+			
+
 			texteDialogue.textContent = "";
 			afficherLettre(nouveauDialogue);
 			boutonSuivant.disabled = false;
